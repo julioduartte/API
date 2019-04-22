@@ -23,7 +23,7 @@ namespace APITCC.Controllers
                 if (aluno == null)
                 {
                     //*2
-                    return Request.CreateErrorResponse(HttpStatusCode.NotFound, "Nenhum registro encontrado");
+                    return Request.CreateErrorResponse(HttpStatusCode.NotFound, "Login Inválido!");
                 }
                 //*1
                 return Request.CreateResponse(HttpStatusCode.OK, aluno);
